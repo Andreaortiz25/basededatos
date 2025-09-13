@@ -14,12 +14,12 @@ NombreDestino VARCHAR(50)
 )
 
 CREATE TABLE Clientes
-(CodigoDestino INT FOREIGN KEY REFERENCES Destino (CodigoDestino)
-,idCliente INT PRIMARY KEY IDENTITY
-,NombreCliente VARCHAR(100) NOT NULL
-,CodigoVendedor INT FOREIGN KEY REFERENCES vendedor (CodigoVendedor)
-,TelefonoCliente VARCHAR(15)
-,NombreDestino VARCHAR(50)
+(CodigoDestino INT FOREIGN KEY REFERENCES Destino (CodigoDestino),
+idCliente INT PRIMARY KEY IDENTITY,
+NombreCliente VARCHAR(100) NOT NULL,
+CodigoVendedor INT FOREIGN KEY REFERENCES vendedor (CodigoVendedor),
+TelefonoCliente VARCHAR(15),
+NombreDestino VARCHAR(50)
 )
 
 
